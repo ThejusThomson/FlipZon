@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+    </head>
+<body onload='document.form1.text1.focus()'>
+    <header>
+  <img src="D:\Images\logo.jpg" width="50" height="50">
+  <input type="text" placeholder="Search..">
+ <a href="login.html" ><button>Login</button></a>
+  <a href="cartpage.html" ><button>Cart</button></a>
+ </header>
+ <hr>
+        <p>Please Enter Details</p>
+		<form name="form1" action="#">
+            <table>
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        <input type=text name="name" placeholder="YOUR NAME">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Mobile Number:
+                    </td>
+                    <td>
+                        <input type=text name="number"placeholder="MOBILE NUMBER">
+                    </td>                    
+                </tr>
+                <tr>
+                    <td>
+                        Email ID: 
+                    </td>
+                    <td>
+                        <input type=text name="username" placeholder="EMAIL ADDRESS">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password: 
+                    </td>
+                    <td>
+                        <input type=password name="password" placeholder="PASSWORD">
+                    </td>
+                </tr>
+                <tr><td>
+               <input type="submit" name="submit" value="Submit" onclick="ValidationEmail(document.form1.username)">
+              </td>  </tr>
+            </table>
+        </form>  
+        		<script src="emailvalidate.js"></script>
+              
+        <br>
+    <p>
+        ALREADY HAVE AN ACCOUNT?
+        <a href="login.html">Sign In</a>
+    </p>
+    
+ 	<a href="homepage.html">Home</a>
+ 	
+    <hr>
+    <footer>
+ 		<input type="button" name=contact value="Contact">
+ 		<input type="button" name=help value="Help">
+  	</footer> 
+    </body>
+</html>

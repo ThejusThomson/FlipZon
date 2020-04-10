@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Description</title>
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+            .column{
+                float:left;
+                width: 40%;
+                padding: 5px;
+                height: 500px;
+            }
+            .row::after{
+                content: "xx";
+                display: table;
+                clear: both;
+            }
+            footer{
+                float:right;
+            }
+            .div1 {
+                    
+                    width: 500px;
+                    height: 250px;  
+                    padding: 50px;
+                    border: 3px solid rgb(0, 0, 0);
+                    }
+
+        </style>
+    </head>
+    <body>
+<header>
+  <img src="D:\Images\logo.jpg" width="50" height="50">
+  <input type="text" placeholder="Search..">
+  Username
+  <div class="dropdown">
+  <button class="dropbtn">More</button>
+  <div class="dropdown-content">
+    <a href="edituser.html">Edit Profile</a>
+    <a href="#">Sign out</a>
+  </div>
+</div>
+</header><hr>
+        <h2>Product Name</h2>
+        <div class="row">
+            <div class="column" style="background-color: rgb(62, 185, 241);">
+                <h3>Product Image</h3>
+                <div class="div1">
+                    IMAGE
+                  </div>
+                  <table border=2>
+                      <tr>
+                          <td>
+                              Image 1
+                          </td>
+                          <td>
+                              Image 2
+                          </td>
+                          <td>
+                              Image 3
+                          </td>
+                          <td>
+                              Image 4
+                          </td>
+                      </tr>
+                  </table>
+            </div>
+            <div class="column" style="background-color: rgb(144, 250, 232);">
+                <h3>Description of Product</h3>
+                <p>Best<br>Strong</p>
+            </div>
+        </div>
+<hr>
+<footer>
+ 		<input type="button" name=contact value="Contact">
+ 		<input type="button" name=help value="Help">
+  	</footer>     </body>
+</html>

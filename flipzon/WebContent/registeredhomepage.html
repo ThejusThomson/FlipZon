@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: white;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+
+</head>
+<body>
+<header>
+  <img src="D:\Images\logo.jpg" width="50" height="50">
+  <input type="text" placeholder="Search..">
+  Username
+  <div class="dropdown">
+  <button class="dropbtn">More</button>
+  <div class="dropdown-content">
+    <a href="#">Edit Profile</a>
+    <a href="#">Sign out</a>
+  </div>
+</div>
+</header>
+<hr> 
+<br>
+<br>
+ <label for="">Choose a category:</label>
+
+<select id="">
+  <option value="Food">Food</option>
+  <option value="Garment">Garment</option>
+  <option value="Books">Books</option>
+</select>
+<br>
+<br>
+<div align="left">
+<a href="#" class="previous">&laquo; Previous</a>
+</div>
+<div align="right">
+<a href="#" class="next">Next &raquo;</a>
+</div>
+<br>
+<br>
+<hr>
+
+<footer>
+  <input type="submit" name="Contact Us" value="Contact">
+  <input type="submit" name="Help" value="Help">
+</footer>
+</body>
+</html>

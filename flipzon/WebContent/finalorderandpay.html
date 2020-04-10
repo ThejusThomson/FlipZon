@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	pay,total
+	{
+		display:block;
+		float:right;
+		width:45%;
+		background-color:#f1f1f1;
+	}
+	summary,addr
+	{
+		display:block;
+		padding:20px;
+		width:45%;
+		height:15px;
+		background-color:#f1f1f1;
+	}
+	mode
+	{
+		display:block;
+		padding:20px;
+		width:45%;
+		height:115px;
+		background-color:#f1f1f1;
+	}
+	footer
+	{
+		float:right;
+	}	
+</style>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<header>
+  <img src="D:\Images\logo.jpg" width="50" height="50">
+  <input type="text" placeholder="Search..">
+  Username
+  <div class="dropdown">
+  <button class="dropbtn">More</button>
+  <div class="dropdown-content">
+    <a href="edituser.html">Edit Profile</a>
+    <a href="#">Sign out</a>
+  </div>
+</div>
+</header><hr>
+	<div>
+		<summary>summary</summary>
+	</div>
+	<div>
+		<pay>payment</pay>
+	</div>
+	<br/>
+	<div>
+		<addr>delivery address</addr>
+	</div>
+	<br/>
+	<div>
+		<mode>payment method:<br/>
+			<input type="button" name=NB value="Net banking"><br/><br/>
+			<input type="button" name=COD value="Cash on delivery"><br/><br/>
+			<input type="button" name=CP value="Card pay"><br/>
+		</mode>
+	</div>
+	<div>
+		<total>total payment</total>
+	</div>
+	<br/><br/><br/>
+	<hr/>
+	<footer>
+ 		<input type="button" name=contact value="Contact">
+ 		<input type="button" name=help value="Help">
+  	</footer> 
+</body>
+</html>

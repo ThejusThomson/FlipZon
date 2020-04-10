@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<style>
+	footer
+	{
+	float:right;
+	}
+	fp
+	{
+	margin-left :55px;
+	}
+</style>
+</head>
+<body onload='document.form1.text1.focus()'>
+<header>
+  <img src="D:\Images\logo.jpg" width="50" height="50">
+  <input type="text" placeholder="Search..">
+  <a href="cartpage.html" ><button>Cart</button></a>
+ </header>
+ <hr>		<br/><br/>
+		<form name="form1" action="#">
+			USERNAME :  <input type="text" name="username"><br/><br/>
+			PASSWORD :  <input type="password" name="pswd"><br/><br/>
+			<input type="submit" name="submit" value="Submit" onclick="ValidationEmail(document.form1.username)">
+			<a href="forgotpassword.html"> Forgot password?</a>
+			<br/><br/><br/>
+			New User? <a href="registration.html">Register Here!</a>
+		</form>
+		<script src="emailvalidate.js"></script>
+		<br/>
+		<a href="homepage.html">Home</a>
+		<hr/>
+		<footer>
+			<input type="button" name=contact value="Contact">
+			<input type="button" name=help value="Help">
+		</footer> 
+	</body>
+</html>
