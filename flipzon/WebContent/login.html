@@ -2,8 +2,20 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Login</title>
+<title>Insert title here</title>
 <style>
+#img
+{
+float: left;
+}
+header
+{
+text-align: center;
+}
+div
+{
+text-align: center;
+}
 	footer
 	{
 	float:right;
@@ -16,22 +28,35 @@
 </head>
 <body onload='document.form1.text1.focus()'>
 <header>
-  <img src="D:\Images\logo.jpg" width="50" height="50">
+  <img id="img" src="C:\Users\Admin\Downloads\logo.jpg" width="80" height="50">
   <input type="text" placeholder="Search..">
   <a href="cartpage.html" ><button>Cart</button></a>
  </header>
  <hr>		<br/><br/>
+ <div>
 		<form name="form1" action="#">
 			USERNAME :  <input type="text" name="username"><br/><br/>
-			PASSWORD :  <input type="password" name="pswd"><br/><br/>
-			<input type="submit" name="submit" value="Submit" onclick="ValidationEmail(document.form1.username)">
-			<a href="forgotpassword.html"> Forgot password?</a>
+			PASSWORD :  <input type="password" name="pswd" id="pass"><br/><br>
+			<input type="checkbox" onclick="myFunction()">Show Password<br/><br><br>
+			<input type="submit" name="submit" value="submit" onclick="ValidationEmail(document.form1.username)">
+			<fp><a href="forgotpassword.html"> forgot password</a></fp>
 			<br/><br/><br/>
-			New User? <a href="registration.html">Register Here!</a>
+			<a href="registration.html"><input type="button" name=newuser value="New user?Register"></a>
 		</form>
-		<script src="emailvalidate.js"></script>
-		<br/>
-		<a href="homepage.html">Home</a>
+		<script type="text/javascript">
+		function myFunction() {
+			  var x = document.getElementById("pass");
+			  if (x.type === "password") {
+			    x.type = "text";
+			  } else {
+			    x.type = "password";
+			  }
+			}
+		</script>
+		<script src="emailvalidate.js">
+		</script>
+		<br/><br/><br/>
+		</div>
 		<hr/>
 		<footer>
 			<input type="button" name=contact value="Contact">
