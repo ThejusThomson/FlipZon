@@ -2,17 +2,58 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Payment</title>
- <style>
+<title>Insert title here</title>
+<style>
+#img
+{
+float: left;
+}
+header
+{
+text-align: center;
+}
+.dropbtn 
+{
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
 
-    footer{
-    float:right;
-    }
-  </style>
-</head>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: white;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+footer
+	{
+	float:right;
+	}</style></head>
 <body>
 <header>
-  <img src="D:\Images\logo.jpg" width="50" height="50">
+  <img id="img" src="C:\Users\Admin\Downloads\logo.jpg" width="80" height="50">
   <input type="text" placeholder="Search..">
   Username
   <div class="dropdown">
@@ -23,7 +64,7 @@
   </div>
 </div>
 </header><hr>
-<h1>PAYMENT</h1> <form>
+<center><h1>PAYMENT</h1> <form>
             <table>
                 <tr>
                     <td>
@@ -60,6 +101,7 @@
             </table>
         </form><br><br>
        <a href="categorywiseproduct.html"> <button>SUBMIT</button></a>
+        </center> 
         <hr>
 <footer>
  		<input type="button" name=contact value="Contact">
