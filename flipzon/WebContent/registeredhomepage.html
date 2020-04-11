@@ -2,9 +2,22 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>registeredhomepage</title>
+<title>Insert title here</title>
 <style>
-.dropbtn {
+#img
+{
+float: left;
+}
+header
+{
+text-align: center;
+}
+footer
+	{
+	float:right;
+	}
+.dropbtn 
+{
   background-color: white;
   color: black;
   padding: 16px;
@@ -38,22 +51,18 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
-  footer{
-    float:right;
-    }
-
 </style>
 
 </head>
 <body>
 <header>
-  <img src="D:\Images\logo.jpg" width="50" height="50">
+  <img id="img" src="C:\Users\Admin\Downloads\logo.jpg" width="80" height="50">
   <input type="text" placeholder="Search..">
   Username
   <div class="dropdown">
   <button class="dropbtn">More</button>
   <div class="dropdown-content">
-    <a href="#">Edit Profile</a>
+    <a href="edituser.html">Edit Profile</a>
     <a href="#">Sign out</a>
   </div>
 </div>
