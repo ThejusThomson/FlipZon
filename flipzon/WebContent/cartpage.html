@@ -2,11 +2,55 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Cart</title>
+<title>Insert title here</title>
 <style>
-	footer{
-    float:right;
-    }
+#img
+{
+float: left;
+}
+header
+{
+text-align: center;
+}
+.dropbtn 
+{
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: white;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+footer
+	{
+	float:right;
+	}
 #price
 {
 margin-right:20px;
@@ -15,7 +59,7 @@ float:left;
   height: 200px;
 
 }
-#img
+#img1
 {
 float: left;
  background-color: white;
@@ -50,7 +94,7 @@ padding:20px;
 </head>
 <body>
 <header>
-  <img src="D:\Images\logo.jpg" width="50" height="50">
+  <img id="img" src="C:\Users\Admin\Downloads\logo.jpg" width="80" height="50">
   <input type="text" placeholder="Search..">
   Username
   <div class="dropdown">
@@ -63,7 +107,7 @@ padding:20px;
 </header><hr>
 <div id="prod">
 <br>
-<div id="img">
+<div id="img1">
 <img alt="ac" src="images/ac.jpg" height="50" width="25">
 </div>
 <aside>
@@ -88,8 +132,7 @@ Enter the Price<input type="text" name="Price" size="20">
 </select><br><br>
 Total<input type="text" name="total" size="10">
 </div>
-	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<hr>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
 <footer>
  		<input type="button" name=contact value="Contact">
  		<input type="button" name=help value="Help">
