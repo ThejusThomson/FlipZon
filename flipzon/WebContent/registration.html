@@ -2,21 +2,33 @@
 <html>
     <head>
         <title>Registration</title>
-	    <style>
-	    footer{
-    		float:right;
-   		 }
-	    </style>
-    </head>
+  <style>
+  #img
+{
+float: left;
+}
+header
+{
+text-align: center;
+}
+  div
+  {
+  text-align: center;
+  }
+  footer
+	{
+	float:right;
+	}</style>  </head>
 <body onload='document.form1.text1.focus()'>
     <header>
-  <img src="D:\Images\logo.jpg" width="50" height="50">
+  <img id="img" src="C:\Users\Admin\Downloads\logo.jpg" width="80" height="50">
   <input type="text" placeholder="Search..">
  <a href="login.html" ><button>Login</button></a>
   <a href="cartpage.html" ><button>Cart</button></a>
  </header>
  <hr>
-        <p>Please Enter Details</p>
+      <center> <h1>Please Enter Details</h1></center> 
+        
 		<form name="form1" action="#">
             <table>
                 <tr>
@@ -48,14 +60,23 @@
                         Password: 
                     </td>
                     <td>
-                        <input type=password name="password" placeholder="PASSWORD">
-                    </td>
-                </tr>
+                        <input type=password name="password" placeholder="PASSWORD" id="pass"></td>
+                        <tr>
+                        			<td><input type="checkbox" onclick="myFunction()">Show Password </td></tr><tr></tr>
+                
                 <tr><td>
-               <input type="submit" name="submit" value="Submit" onclick="ValidationEmail(document.form1.username)">
+               <input type="submit" name="submit" value="submit" onclick="ValidationEmail(document.form1.username)">
               </td>  </tr>
             </table>
         </form>  
+        <script type="text/javascript">function myFunction() {
+			  var x = document.getElementById("pass");
+			  if (x.type === "password") {
+			    x.type = "text";
+			  } else {
+			    x.type = "password";
+			  }
+			}</script>
         		<script src="emailvalidate.js"></script>
               
         <br>
@@ -63,9 +84,6 @@
         ALREADY HAVE AN ACCOUNT?
         <a href="login.html">Sign In</a>
     </p>
-    
- 	<a href="homepage.html">Home</a>
- 	
     <hr>
     <footer>
  		<input type="button" name=contact value="Contact">
