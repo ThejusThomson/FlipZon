@@ -1,66 +1,58 @@
-<!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-<style>
-#img
-{
-float: left;
-}
-header
-{
-text-align: center;
-}
-div
-{
-text-align: center;
-}
-	footer
-	{
-	float:right;
-	}
-	fp
-	{
-	margin-left :55px;
-	}
-</style>
-</head>
-<body onload='document.form1.text1.focus()'>
-<header>
-  <img id="img" src="C:\Users\Admin\Downloads\logo.jpg" width="80" height="50">
-  <input type="text" placeholder="Search..">
-  <a href="cartpage.html" ><button>Cart</button></a>
- </header>
- <hr>		<br/><br/>
- <div>
-		<form name="form1" action="#">
-			USERNAME :  <input type="text" name="username"><br/><br/>
-			PASSWORD :  <input type="password" name="pswd" id="pass"><br/><br>
-			<input type="checkbox" onclick="myFunction()">Show Password<br/><br><br>
-			<input type="submit" name="submit" value="submit" onclick="ValidationEmail(document.form1.username)">
-			<fp><a href="forgotpassword.html"> forgot password</a></fp>
-			<br/><br/><br/>
-			<a href="registration.html"><input type="button" name=newuser value="New user?Register"></a>
-		</form>
-		<script type="text/javascript">
-		function myFunction() {
-			  var x = document.getElementById("pass");
-			  if (x.type === "password") {
-			    x.type = "text";
-			  } else {
-			    x.type = "password";
-			  }
-			}
-		</script>
-		<script src="emailvalidate.js">
-		</script>
-		<br/><br/><br/>
-		</div>
-		<hr/>
-		<footer>
-			<input type="button" name=contact value="Contact">
-			<input type="button" name=help value="Help">
-		</footer> 
-	</body>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="stylelogin.css">
+    </head>
+    <body onload='document.form1.text1.focus()'>
+        <div class="loginbox">
+            <img src="loginicon.jpg" class="avatar">
+            <h1>LOGIN</h1>
+            <form name="form1" action="#">
+                <p>Username :   
+                <input type="text" name="username" placeholder="Enter username">
+                   <br><br>Password :   
+                <input type="password" name="pswd" id ="pass" placeholder="Enter password" >
+                </p><br>
+                <fp>
+                    <input type="checkbox" onclick="myFunction()"><p1>Show Password</p1><br/><br><br>
+                </fp>
+                    <input type="submit" name="signin" value="SIGN IN" onclick="ValidationEmail(document.form1.username)">
+                <fp>
+                    <a href ="#">forgot password?</a><br>
+                </fp><br><br><br><br>
+                <a href="registration.html"><input type="button" name="newuser" value="New user? Register"></a>
+            </form>
+            <script type="text/javascript">
+                function myFunction() {
+                      var x = document.getElementById("pass");
+                      if (x.type === "text") {
+                        x.type = "password";
+                      } else {
+                        x.type = "text";
+                      }
+                    }
+                </script>
+                <script src="emailvalidate.js">
+                </script>
+        </div>
+        <div class="wrapper">
+            
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section links">
+                    <a href="index.html">
+                        <h2 style="color:#d3d3d3">Help</h2>
+                    </a>
+                </div>
+                <div class="footer-section contact-form">
+                    <h2>Contact Us</h2>
+                    Email us at      :<a href="#">flipzone@gmail.com</a><br>
+                    Help line number : 999999999
+    
+                    
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
