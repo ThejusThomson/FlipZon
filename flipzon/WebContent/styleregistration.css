@@ -1,0 +1,64 @@
+body{
+    background-image: linear-gradient(to bottom, rgb(255, 170, 73),rgb(248, 8, 0));
+        margin-top: 150px !important;
+}
+.register-left
+{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    padding: 30px;
+}
+.register-left img
+{
+margin-top: 100px;
+margin-bottom: 18px;
+width: 200px;
+animation: mover 1s infinite alternate;
+}
+
+.register-left p
+{
+    padding: 20px 20px 0;
+}
+.register-right
+{
+    border:20px;
+    background-color: #f8f8f8;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius:10% 50% ;
+    padding: 30px;
+}
+.register-right h2
+{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #555;
+}
+.register-form
+{
+    padding: 30px;
+}
+.register-right .btn-primary
+{
+    float: center;
+    border-radius: 1.5rem;
+    border:none;
+    width: 150px;
+    background: #ff9800;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 0px;
+    padding:10px ;
+}
+.register-right .btn-primary:hover
+{
+    background: #000;
+}
+
+@keyframes mover
+{
+
+0%{transform:translateY(0);}
+100%{transform:translateY(-30px);}
+
+}
