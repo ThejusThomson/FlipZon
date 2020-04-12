@@ -5,8 +5,29 @@
         <link rel="stylesheet" href="styleregistration.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     </head>
+
     <body onload='document.form1.text1.focus()'>
+        <div class="top-nav-bar">
+            <div class="search-box">
+                <img src="images/LOGOc.png" class="logo">
+                <input type="text" class="form-controller">
+                <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="menu-bar">
+                <ul>
+                    <li><a><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                    <li><a>Login</a></li>
+                    <li><a>Register</a></li>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Reg Box-->
         <div class="container">
             <div class="row">
                 <div class="col-md-10 offset=md-1">
@@ -46,18 +67,21 @@
                 </div>
             </div>
         </div>
+        <!--Reg Box-->
+
+        <!--Footer-->
         <div class="footer">
             <div class="footer-content">
                 <div class="footer-section about">
                     <h2>About Us</h2>
                 </div>
                 <div class="footer-section links">
-                    <h2>Links</h2>
+                    <h2>Help</h2>
                 </div>
                 <div class="footer-section contact-form">
                     <h2>Contact Us</h2>
                     <br>
-                    <form action="index.html" methpd="post">
+                    <form action="#" methpd="post">
                     <input type="email" name="emailid" class="text-input contact-input" placeholder="Email ID...">
                     <textarea name="message" rows="2" cols="30" class="text-input contact-input" placeholder="Your Message..."></textarea><br>
                     <button type="submit" class="btn btn-big">
@@ -68,5 +92,7 @@
                 </div>
             </div>
         </div>
+        <!--Footer-->
+
     </body>
 </html>
