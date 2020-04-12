@@ -1,0 +1,71 @@
+body {
+background-image: linear-gradient(to bottom, rgb(255, 170, 73),rgb(248, 8, 0));
+ margin-bottom: 174px;
+        
+}
+
+
+.pay{
+   width:359px;
+   margin:auto;
+   background:black;
+   margin=top:50px;
+   padding:5px;
+}
+form{
+  padding 10px;
+  font-family:arial;
+  border:none;
+}
+h1{
+  text-align:center;
+  color:white;
+}
+input{
+   padding:10px;
+   margin:5px;
+   border-radius:5px;
+   border:none;
+}
+input[type=number], input[type=text]{
+  width:100%;
+}
+input[type=submit]{
+  width:95%;
+  background:#ff3300;
+  cursor:pointer;
+  font-size:18px;
+  font-weight:bold;
+}
+.footer
+{
+    background: black;
+    color: white;
+    height: 300px;
+    position: relative;
+}
+.footer .footer-content
+{
+    display: flex;
+}
+.footer .footer-content .footer-section
+{
+    flex: 1;
+    padding: 30px;
+}
+.footer .footer-content .contact .span
+{
+    display: block;
+    font-size: 1.1lem;
+    margin-bottom: 8px;
+}
+
+.footer .footer-content .contact-form .contact-input
+{
+    background: rgb(87, 87, 87);
+    color: gainsboro;
+    line-height: 1.5rem;
+    margin-bottom: 5px;
+    padding: .7rem 1.2rem;
+    border: none;
+}
