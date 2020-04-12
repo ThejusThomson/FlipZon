@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Registration</title>
         <link rel="stylesheet" href="styleregistration.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
     <body onload='document.form1.text1.focus()'>
         <div class="container">
@@ -30,11 +32,10 @@
                                     </div>
                                     <button type="submit" name="submit" class="btn btn-primary" onclick="ValidationEmail(document.form1.username)">Register
                                     </button>
-                                    <div class="form-group">
-                                            <br>
+                                    <div class="form-group"><br>
                                             ALREADY HAVE AN ACCOUNT?
                                             <a href="login.html">Sign In</a>
-                                            <br><br>
+                                            <br>
                                             <a href="homepage.html">Home</a>
                                     </div>                            
                                 </div>
@@ -42,6 +43,28 @@
                             <script src="emailvalidate.js"></script>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>About Us</h2>
+                </div>
+                <div class="footer-section links">
+                    <h2>Links</h2>
+                </div>
+                <div class="footer-section contact-form">
+                    <h2>Contact Us</h2>
+                    <br>
+                    <form action="index.html" methpd="post">
+                    <input type="email" name="emailid" class="text-input contact-input" placeholder="Email ID...">
+                    <textarea name="message" rows="2" cols="30" class="text-input contact-input" placeholder="Your Message..."></textarea><br>
+                    <button type="submit" class="btn btn-big">
+                        <i class="fa fa-envelope"></i>
+                        Send
+                    </button>
+                </form>
                 </div>
             </div>
         </div>
