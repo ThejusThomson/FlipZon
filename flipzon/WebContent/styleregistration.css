@@ -1,7 +1,19 @@
-body{
-    background-image: linear-gradient(to bottom, rgb(255, 170, 73),rgb(248, 8, 0));
-        margin-top: 150px !important;
+html{
+    overflow-y: scroll ;
+    min-height: 100%;
 }
+
+body{
+    background-image: linear-gradient(to right, rgb(255, 170, 73),rgb(248, 8, 0));
+        margin-top: 150px !important;
+        min-height: 100%;
+}
+
+.container
+{
+    min-height: 100%;
+}
+
 .register-left
 {
     text-align: center;
@@ -13,6 +25,7 @@ body{
 margin-top: 100px;
 margin-bottom: 18px;
 width: 200px;
+margin-right: 0px;
 animation: mover 1s infinite alternate;
 }
 
@@ -27,6 +40,7 @@ animation: mover 1s infinite alternate;
     border-top-left-radius: 10% 50%;
     border-bottom-left-radius:10% 50% ;
     padding: 30px;
+    margin-bottom: 100px;
 }
 .register-right h2
 {
@@ -62,3 +76,36 @@ animation: mover 1s infinite alternate;
 100%{transform:translateY(-30px);}
 
 }
+.footer
+{
+    background: rgb(58, 58, 58);
+    color: #d3d3d3;
+    height: 300px;
+    position: relative;
+}
+.footer .footer-content
+{
+    display: flex;
+}
+.footer .footer-content .footer-section
+{
+    flex: 1;
+    padding: 30px;
+}
+.footer .footer-content .contact .span
+{
+    display: block;
+    font-size: 1.1lem;
+    margin-bottom: 8px;
+}
+
+.footer .footer-content .contact-form .contact-input
+{
+    background: rgb(87, 87, 87);
+    color: gainsboro;
+    line-height: 1.5rem;
+    margin-bottom: 5px;
+    padding: .7rem 1.2rem;
+    border: none;
+}
+
