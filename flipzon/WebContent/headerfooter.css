@@ -81,9 +81,9 @@
 }
 .footer
 {
-    background: rgb(110, 110, 110);
+    background: rgb(56, 44, 44);
     color: #d3d3d3;
-    height: 250px;
+    height: 290px;
     position: relative;
 }
 .footer .footer-content
