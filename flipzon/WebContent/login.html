@@ -1,4 +1,4 @@
- <html>
+<html>
     <head>
         <title>Login</title>
         <link rel="stylesheet" href="stylelogin.css">
@@ -9,24 +9,101 @@
 
     </head>
     <body onload='document.form1.text1.focus()'>
-        <div class="top-nav-bar">
-            <div class="search-box">
-                <a href="homepage.html">
-                    <img src="images/LOGOc.png" class="logo">
-                </a>
-                <input type="text" class="form-controller">
-                <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i>
-                </span>
-            </div>
-            <div class="menu-bar">
-                <ul>
-                    <li><a href="cartpage.html"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="#">Register</a></li>
-                    </a></li>
-                </ul>
-            </div>
+        <!--Header-->    
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <a href="homepage.html">
+                <img src="images/LOGOcwbg.png" class="logo">
+            </a>
+            <input type="text" class="form-controller" placeholder="Search for products, brands and more">
+            <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i>
+            </span>
         </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="cartpage.html"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Register</a></li>
+                </a></li>
+            </ul>
+        </div>
+        <div class="category">
+          <div class="dropdowns">
+            <button class="dropbtn">Electronics <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Mobiles</a>
+              <a href="#">Laptops</a>
+              <a href="#">Mobile Accessories</a>
+              <a href="#">Speakers</a>
+              <a href="#">Camera</a>
+              <a href="#">Smart Wearables</a>
+              <a href="#">Desktop PCs</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Fashion <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Clothin</a>
+              <a href="#">Footwear</a>
+              <a href="#">Sports Wear</a>
+              <a href="#">Seasonal Wear</a>
+              <a href="#">Personal Care</a>
+              <a href="#">Watches</a>
+              <a href="#">Accessories</a>
+              <a href="#">Inner Wears</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Home Care <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Televisions</a>
+              <a href="#">Washing Machines</a>
+              <a href="#">Refrigerators</a>
+              <a href="#">Kitchen Appliances</a>
+              <a href="#">Small Kitchen Appliances</a>
+              <a href="#">Furnitures</a>
+              <a href="#">Smart Home Automation</a>
+              <a href="#">Dinnerware</a>
+              <a href="#">Cookware</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Sports & Toys <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Cricket</a>
+              <a href="#">Badminton</a>
+              <a href="#">Football</a>
+              <a href="#">Swimming</a>
+              <a href="#">Cycling</a>
+              <a href="#">Skating</a>
+              <a href="#">Exercise & Fitness</a>
+              <a href="#">Remote Control Toys</a>
+              <a href="#">Baby Toys</a>
+              <a href="#">Games</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Education <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Books</a>
+              <a href="#">Stationery</a>
+              <a href="#">School Supplies</a>
+              <a href="#">Online Courses</a>
+              <a href="#">Musical Instruments</a>
+              <a href="#">Projects</a>
+            </div>
+          </div>
+          </div> 
+      </div>
+  
+  <!--Header-->
+  
+  <!--loginbody-->
         <div class="loginbox">
             <img src="loginicon.jpg" class="avatar">
             <h1>LOGIN</h1>
@@ -58,8 +135,11 @@
                 <script src="emailvalidate.js">
                 </script>
         </div>
-        /*<div class="wrapper">   
+        <div class="wrapper">   
         </div>
+        <!--loginbody-->
+
+        <!--footer-->
          <div class="footer">
             <div class="footer-content">
                 <div class="footer-section about">
@@ -69,8 +149,8 @@
                 </div>
                 <div class="footer-section links">
                     <h2>Help</h2>
-                    <a href="about.html"><h4 style="color:#d3d3d3">Cancellation & Return</h4></a>
-                    <a href="index.html"><h4 style="color:#d3d3d3">FAQ</h4></a>
+                    <a href="aboutus.html"><h4 style="color:#d3d3d3">Cancellation & Return</h4></a>
+                    <a href="faq.html"><h4 style="color:#d3d3d3">FAQ</h4></a>
   
                  </div>
                 <div class="footer-section contact-form">
@@ -85,5 +165,7 @@
                 </div>
             </div>
         </div>
-   </body>
+        <!--footer-->
+
+    </body>
 </html>
