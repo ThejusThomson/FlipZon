@@ -1,6 +1,5 @@
 html{
-    overflow-y: scroll ;
-    height: 100%;
+    overflow-y: scroll;
 }
 
 body{
@@ -8,12 +7,14 @@ body{
         margin-top: 0px !important;
         height: 100%;
 }
+
+/*header*/
 .top-nav-bar
 {
     height: 75px;
     top: 0;
     position: sticky;
-    background: rgb(110, 110, 110);
+    background: rgb(0, 0, 0);
     margin-bottom: 20px;
     border-bottom: 3px solid black;
     z-index: 2;
@@ -92,12 +93,78 @@ body{
     color:  rgb(255, 208, 0);
 }
 
+.category
+{
+    margin-top: 5px;
+    background-color: rgba(77, 77, 77, 0.678);
+    height: 45px;
+    position: sticky;
+    z-index: 2;
+}
+.dropbtn {
+    background: none;
+    color: rgb(255, 242, 130);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+  }
+.dropdowns
+{
+    padding-left: 200px;
+    padding-right: 60px;
+    position: relative;
+    display: inline-block;
+}   
+.dropdown {
+    padding-left: 60px;
+    padding-right: 60px;
+    position: relative;
+    display: inline-block;
+  }
+  .dropdowne
+  {
+    padding-left: 60px;
+    padding-right: 200px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f8e5dc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {color:rgb(255, 208, 0);;}
+
+  .dropdowns:hover .dropdown-content {display: block;}
+  
+  .dropdowns:hover .dropbtn {color: rgb(255, 208, 0);}
+
+  .dropdowne:hover .dropdown-content {display: block;}
+  
+  .dropdowne:hover .dropbtn {color:rgb(255, 208, 0);}
+
+/*header*/
 
 .container
 {
     min-height: 100%;
 }
-
 .register-left
 {
     text-align: center;
@@ -113,10 +180,6 @@ margin-right: 0px;
 animation: mover 1s infinite alternate;
 }
 
-.register-left p
-{
-    padding: 20px 20px 0;
-}
 .register-right
 {
     margin-top: 100px;
@@ -161,12 +224,14 @@ animation: mover 1s infinite alternate;
 100%{transform:translateY(-30px);}
 
 }
+
+/*footer*/
 .footer
 {
-    background: rgb(110, 110, 110);
+    background: rgb(0, 0, 0);
     color: #d3d3d3;
     height: 300px;
-    position: relative;
+    position: static;
 }
 .footer .footer-content
 {
@@ -193,4 +258,4 @@ animation: mover 1s infinite alternate;
     padding: .7rem 1.2rem;
     border: none;
 }
-
+/*footer*/
