@@ -92,6 +92,7 @@ body{
     color:  rgb(255, 208, 0);
 }
 
+
 .container
 {
     min-height: 100%;
@@ -142,7 +143,7 @@ animation: mover 1s infinite alternate;
     border-radius: 1.5rem;
     border:none;
     width: 150px;
-    background: #ff9800;
+    background: rgb(129, 0, 0);
     font-weight: 600;
     color: #fff;
     margin-top: 0px;
