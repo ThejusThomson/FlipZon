@@ -1,20 +1,17 @@
-html
-{
+html{
     overflow-y: scroll ;
     height: 100%;
 }
 
-body
-{
-    background-image: linear-gradient(to right, rgb(255, 170, 73),rgb(248, 8, 0));
-    margin-top: 150px !important;
-    height:100%;    
+body{
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.712),rgba(250, 112, 0, 0.637)),url(images/bg.png);
+        margin-top: 0px !important;
+        height: 100%;
 }
-
 .loginbox
 {
 	width:350px;
-	height:450px;
+	height:500px;
 	background: #000;
 	color: #fff;
 	top:50%;
@@ -110,29 +107,3 @@ margin-left :65px;
 {
     min-height: 100%;
 }
-.footer
-{
-    background: rgb(58, 58, 58);
-    color: #d3d3d3;
-    height: 200px;
-}
-.footer .footer-content
-{
-    display: flex;
-}
-.footer .footer-content .footer-section
-{
-    flex: 1;
-    padding: 30px;
-}
-
-.footer .footer-content .contact-form .contact-input
-{
-    background: rgb(87, 87, 87);
-    color: gainsboro;
-    line-height: 1.5rem;
-    margin-bottom: 5px;
-    padding: .7rem 1.2rem;
-    border: none;
-}
-.footer
