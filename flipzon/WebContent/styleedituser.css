@@ -1,9 +1,10 @@
 
+
 #img{
     padding-left: 15px;
     }
 body{
-    background-image: linear-gradient(to bottom, rgb(255, 170, 73),rgb(248, 8, 0));
+    background: linear-gradient(to bottom, rgb(255, 170, 73),rgb(248, 8, 0)),url(images/bg.png);
         margin-top: 10px !important;
 }
 .register-right
