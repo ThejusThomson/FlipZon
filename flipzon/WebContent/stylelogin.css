@@ -15,15 +15,10 @@ body{
     height: 75px;
     top: 0;
     position: sticky;
-    background: rgb(0, 0, 0);
+    background:rgb(56, 44, 44);
     margin-bottom: 20px;
     border-bottom: 3px solid black;
     z-index: 2;
-}
-.logo
-{
-    height: 70px;
-    margin: 0 10px;
 }
 .form-controller
 {
@@ -40,7 +35,7 @@ body{
 .input-group-text
 {
     height: 40px;
-    background: rgb(129, 0, 0) !important;
+    background:#ff9800 !important;
     border: 1px solid black !important;
     margin: 12px 20px 3px 0 !important;
     border-top-left-radius: 0px !important;
@@ -49,18 +44,20 @@ body{
     border-bottom-right-radius: 20px !important;
     cursor: pointer;
 }
+.logo
+{
+    height: 70px;
+    margin: 0 10px;
+}
 .search-box
 {
     width: 60%;
     display: inline-flex;
 }
-.form-controller:focus
-{
-    background: rgb(255, 242, 130);
-}
+
 .fa-search
 {
-    color: rgb(255, 242, 130);
+    color: black;
 }
 .menu-bar
 {
@@ -88,10 +85,10 @@ body{
 }
 
 .menu-bar a{
-    color:  rgb(255, 242, 130);
+    color:#ff9800;
 }
 .menu-bar a:hover{
-    color:  rgb(255, 208, 0);
+    color:white;
 }
 
 .category
@@ -275,86 +272,7 @@ margin-left :65px;
 {
     min-height: 100%;
 }
-.top-nav-bar
-{
-    height: 75px;
-    top: 0;
-    position: sticky;
-    background:black;
-    margin-bottom: 20px;
-    border-bottom: 3px solid black;
-    z-index: 2;
-}
-.form-controller
-{
-    width: 1000px;
-    height: 40px;
-    margin-top: 12px;
-    margin-left: 125px;
-    border-top-left-radius: 10px !important;
-    border-bottom-left-radius: 10px !important;
-    border-top-right-radius: 0px !important;
-    border-bottom-right-radius: 0px !important;
-    box-shadow: none;
-}
-.input-group-text
-{
-    height: 40px;
-    background:#ff9800 !important;
-    border: 1px solid black !important;
-    margin: 12px 20px 3px 0 !important;
-    border-top-left-radius: 0px !important;
-    border-bottom-left-radius: 0px !important;
-    border-top-right-radius: 20px !important;
-    border-bottom-right-radius: 20px !important;
-    cursor: pointer;
-}
-.logo
-{
-    height: 70px;
-    margin: 0 10px;
-}
-.search-box
-{
-    width: 60%;
-    display: inline-flex;
-}
 
-.fa-search
-{
-    color: black;
-}
-.menu-bar
-{
-  width: 40%;
-  height: 75px;
-  float: right;  
-}
-.menu-bar ul
-{
-    display: inline-flex;
-    float: right;
-}
-.menu-bar ul li
-{
-    list-style-type: none;
-    padding: 15px 25px;
-    text-align: center;
-    cursor: pointer;
-}
-.menu-bar ul li
-{
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.menu-bar a{
-    color:#ff9800;
-}
-.menu-bar a:hover{
-    color:white;
-}
 
 
 /*footer*/
