@@ -14,15 +14,10 @@ body{
     height: 75px;
     top: 0;
     position: sticky;
-    background: rgb(0, 0, 0);
+    background:rgb(56, 44, 44);
     margin-bottom: 20px;
     border-bottom: 3px solid black;
     z-index: 2;
-}
-.logo
-{
-    height: 70px;
-    margin: 0 10px;
 }
 .form-controller
 {
@@ -39,7 +34,7 @@ body{
 .input-group-text
 {
     height: 40px;
-    background: rgb(129, 0, 0) !important;
+    background:#ff9800 !important;
     border: 1px solid black !important;
     margin: 12px 20px 3px 0 !important;
     border-top-left-radius: 0px !important;
@@ -48,18 +43,20 @@ body{
     border-bottom-right-radius: 20px !important;
     cursor: pointer;
 }
+.logo
+{
+    height: 70px;
+    margin: 0 10px;
+}
 .search-box
 {
     width: 60%;
     display: inline-flex;
 }
-.form-controller:focus
-{
-    background: rgb(255, 242, 130);
-}
+
 .fa-search
 {
-    color: rgb(255, 242, 130);
+    color: black;
 }
 .menu-bar
 {
@@ -87,10 +84,10 @@ body{
 }
 
 .menu-bar a{
-    color:  rgb(255, 242, 130);
+    color:#ff9800;
 }
 .menu-bar a:hover{
-    color:  rgb(255, 208, 0);
+    color:white;
 }
 
 .category
@@ -110,7 +107,7 @@ body{
   }
 .dropdowns
 {
-    padding-left: 200px;
+    padding-left: 130px;
     padding-right: 60px;
     position: relative;
     display: inline-block;
@@ -182,13 +179,13 @@ animation: mover 1s infinite alternate;
 
 .register-right
 {
-    margin-top: 100px;
+    margin-top: 40px;
     border:20px;
     background-color: #f8f8f8de;
     border-top-left-radius: 10% 50%;
     border-bottom-left-radius:10% 50% ;
-    padding: 30px;
-    margin-bottom: 100px;
+    padding: 10px;
+    margin-bottom: 70px;
 }
 .register-right h2
 {
@@ -228,7 +225,7 @@ animation: mover 1s infinite alternate;
 /*footer*/
 .footer
 {
-    background: rgb(0, 0, 0);
+    background: rgb(56, 44, 44);
     color: #d3d3d3;
     height: 300px;
     position: static;
@@ -251,7 +248,7 @@ animation: mover 1s infinite alternate;
 
 .footer .footer-content .contact-form .contact-input
 {
-    background: rgb(53, 53, 53);
+    background: rgb(56,44,44);
     color: gainsboro;
     line-height: 1.5rem;
     margin-bottom: 5px;
