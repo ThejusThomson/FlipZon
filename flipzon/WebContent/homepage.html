@@ -1,53 +1,206 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-<style>
-#img
-{
-float: left;
-}
-header
-{
-text-align: center;
-}
-footer
+  <head>
+    <meta charset="ISO-8859-1">
+    <title>Home</title>
+    <link rel="stylesheet" href="stylehomepage.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen"> 
+  </head>
 
-	{
-	float:right;
-	}</style></head>
-<body>
-<header>
-  <img id="img" src="C:\Users\Admin\Downloads\logo.jpg" width="60" height="50">
-  <input type="text" placeholder="Search..">
- <a href="login.html" ><button>Login</button></a>
-  <a href="cartpage.html" ><button>Cart</button></a>
- </header>
- <hr>
-<br>
-<br>
- <label for="">Choose a category:</label>
+  <body>
+<!--Header-->
+    <div class="top-nav-bar">
+      <div class="search-box">
+          <a href="homepage.html">
+              <img src="images/LOGOcwbg.png" class="logo">
+          </a>
+          <input type="text" class="form-controller" placeholder="Search for products, brands and more">
+          <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i>
+          </span>
+      </div>
+      <div class="menu-bar">
+          <ul>
+              <li><a href="cartpage.html"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="registration.html">Register</a></li>
+              </a></li>
+          </ul>
+      </div>
+      <div class="category">
+        <div class="dropdowns">
+          <button class="dropbtn">Electronics <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Mobiles</a>
+            <a href="#">Laptops</a>
+            <a href="#">Mobile Accessories</a>
+            <a href="#">Speakers</a>
+            <a href="#">Camera</a>
+            <a href="#">Smart Wearables</a>
+            <a href="#">Desktop PCs</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Fashion <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Clothin</a>
+            <a href="#">Footwear</a>
+            <a href="#">Sports Wear</a>
+            <a href="#">Seasonal Wear</a>
+            <a href="#">Personal Care</a>
+            <a href="#">Watches</a>
+            <a href="#">Accessories</a>
+            <a href="#">Inner Wears</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Home Care <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Televisions</a>
+            <a href="#">Washing Machines</a>
+            <a href="#">Refrigerators</a>
+            <a href="#">Kitchen Appliances</a>
+            <a href="#">Small Kitchen Appliances</a>
+            <a href="#">Furnitures</a>
+            <a href="#">Smart Home Automation</a>
+            <a href="#">Dinnerware</a>
+            <a href="#">Cookware</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Sports & Toys <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Cricket</a>
+            <a href="#">Badminton</a>
+            <a href="#">Football</a>
+            <a href="#">Swimming</a>
+            <a href="#">Cycling</a>
+            <a href="#">Skating</a>
+            <a href="#">Exercise & Fitness</a>
+            <a href="#">Remote Control Toys</a>
+            <a href="#">Baby Toys</a>
+            <a href="#">Games</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Education <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Books</a>
+            <a href="#">Stationery</a>
+            <a href="#">School Supplies</a>
+            <a href="#">Online Courses</a>
+            <a href="#">Musical Instruments</a>
+            <a href="#">Projects</a>
+          </div>
+        </div>
+        </div>
+      </div>
  
-<select id="">
-  <option value="Food">Food</option>
-  <option value="Garment">Garment</option>
-  <option value="Books">Books</option>
-</select>
-<br>
-<br>
-<div align="left">
-<a href="#" class="previous">&laquo; Previous</a>
+
+<!--Header-->
+
+<!--Content-->
+<div class="slider">
+  <div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#slider" data-slide-to="0" class="active"></li>
+      <li data-target="#slider" data-slide-to="1"></li>
+      <li data-target="#slider" data-slide-to="2"></li>
+      <li data-target="#slider" data-slide-to="3"></li>
+    </ol>  
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/1.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="images/2.jpg" class="d-block w-100" >
+      </div>
+      <div class="carousel-item">
+        <img src="images/3.jpg" class="d-block w-100" >
+      </div>
+      <div class="carousel-item">
+        <img src="images/4.jpg" class="d-block w-100" >
+      </div>
+    </div>
+  </div>
 </div>
-<div align="right">
-<a href="#" class="next">Next &raquo;</a>
+<br>
+<h3 class="head3">Trending</h3>
+<div class="card-deck">
+  <div class="card">
+    <img src="images/phone.jpg" class="card-img-top">
+      <div class="card-body">
+      <h5 class="card-title">OnePlus 7 Pro</h5>
+      <p class="card-text">Rating:</p>
+      </div>
+  </div>
+  <div class="card">
+    <img src="images/jeans.jpg" class="card-img-top">
+    <div class="card-body">
+    <h5 class="card-title">Jeans</h5>
+    <p class="card-text">Rating:</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="images/fit.jpg" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Mi Band 3</h5>
+      <p class="card-text">Rating:</p>
+      </div>
+  </div>
+  <div class="card">
+    <img src="images/tv.jpg" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Sanyo Smart TV</h5>
+      <p class="card-text">Rating:</p>
+      </div>
+  </div>
+  <div class="card">
+    <img src="images/fitness.jpg" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Fit Freak Pro</h5>
+      <p class="card-text">Rating:</p>
+      </div>
+  </div>
 </div>
-<br>
-<br>
-<hr>
-<footer>
- 		<input type="button" name=contact value="Contact">
- 		<input type="button" name=help value="Help">
-  	</footer> 
-</body>
+<!--Content-->
+
+
+<!--Footer-->
+<div class="footer">
+  <div class="footer-content">
+      <div class="footer-section about">
+          <h2>About</h2>
+          <a href="about.html"><h4 style="color:#d3d3d3">About Us</h4></a>
+          <a href="about.html"><h4 style="color:#d3d3d3">Policy</h4></a>
+      </div>
+      <div class="footer-section links">
+          <h2>Help</h2>
+          <a href="about.html"><h4 style="color:#d3d3d3">Cancellation & Return</h4></a>
+          <a href="index.html"><h4 style="color:#d3d3d3">FAQ</h4></a>
+
+       </div>
+      <div class="footer-section contact-form">
+          <h2>Contact Us</h2>
+          Email us at      :<a href="#">flipzone@gmail.com</a><br>
+          Help line number : 999999999
+          <p>Registered Office Adress:<br>
+          Flipzon Private Limited,<br>
+          Inner Ring Road,Banseli Village,<br>
+          Chennai,600031,<br>
+          TamilNadu,India</p>
+      </div>
+  </div>
+</div> 
+<!--Footer-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>    
+  </body>
 </html>
