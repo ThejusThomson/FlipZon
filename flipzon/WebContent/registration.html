@@ -3,7 +3,7 @@
     <head>
         <title>Registration</title>
         <link rel="stylesheet" href="headerfooter.css">
-        <link rel="stylesheet" href="styleregistration.css">
+        <link rel="stylesheet" href="styleregister.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -129,8 +129,30 @@
                                         <input type="text" name="username" class="form-control" placeholder="Email ID" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" name="pass1" id="pass1" class="form-control" placeholder="Password" required>
-                                    </div>
+                                        <input type="password" name="pass1" id="pass1" onkeyup="checkValid()"  class="form-control" placeholder="Password" required><span id="confirmMessage1" class="confirmMessage1"></span><br> 
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                            Password Policy
+                                         </button>
+
+                                       <!-- The Modal -->
+                                      <div class="modal" id="myModal">
+                                      <div class="modal-dialog">
+                                      <div class="modal-content">
+      
+                                   <!-- Modal Header -->
+                                   <div class="modal-header">
+                                     <h4 class="modal-title">Password Policy</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                       </div>
+        
+                                     <!-- Modal body -->
+                                      <div class="modal-body">
+                                        <p>Password must contain:<br>1.Atleast one number<br>2.Atleast one uppercase letter<br>3.Atleast one lowercase letter<br>4.Atleast 8 or more characters</p>
+                                         </div>
+                                        </div>
+                                         </div>
+                                        </div>
+                                     </div>
                                     <div class="form-group">
                                         <input type="password" name="pass2" id="pass2" onkeyup="checkPass()" class="form-control" placeholder="Confirm Password" required>
                                         <span id="confirmMessage" class="confirmMessage"></span>
@@ -148,7 +170,7 @@
                             </form>
                             <script src="emailvalidate.js"></script>
                             <script src="password.js"></script> 
-                        </div>
+                            </div>
                     </div>
                 </div>
             </div>
