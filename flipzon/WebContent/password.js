@@ -18,3 +18,25 @@ message.innerHTML="Password Does Not Match!"
 
 }
 }
+function checkValid() {
+var str=document.getElementById('pass1').value;
+var msg=document.getElementById('confirmMessage1');
+var goodColor="#66cc66";
+var badColor="#ff6666";
+if (str.match(/[a-z]/g) && str.match(/[A-Z]/g) && str.match(/[0-9]/g) && str.length >= 8) 
+{
+   pass1.style.backgroundColor=goodColor;
+   msg.innerHTML = "<span style='color: green;'>"+ 
+                        "Password accepted</span>" 
+}
+                
+   else 
+      {
+               pass1.style.backgroundColor=badColor;
+                msg.innerHTML = "<span style='color: red;'>"+ 
+                        "Your password does not follow the password policy</span>" 
+  
+        } 
+      
+     
+}
